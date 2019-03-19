@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Vue Event Listeners</title>
+    </head>
+    <body>
+
+        <div id="root">
+
+            <ul>
+                <!-- <li v-for="friend in friends"> {{friend}} </li> -->
+                <li v-for="friend in friends" v-text="friend"></li>
+            </ul>
+
+            <input type="text" v-model="newFriend" placeholder="Gunther">
+            <!-- <button v-on:click="addFriend">Add Friend</button> -->
+            <button @click="addFriend">Add Friend</button>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

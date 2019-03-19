@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>The Need for Computed Properties</title>
+    </head>
+    <body>
+
+        <div id="root">
+
+            <!-- <h1 v-text="new Date()"></h1> -->
+
+            <!-- <h1>
+                {{ reversedMessage }}
+            </h1> -->
+
+            <h2>Bucket list ideas</h2>
+            <ul>
+                <!-- <li v-for="task in tasks" v-if="task.completed" v-text="task.description"></li> -->
+                <li v-for="bucket in bucketList" v-text="bucket.idea"></li>
+            </ul>
+
+            <h2>Still todo</h2>
+            <ul>
+                <!-- <li v-for="task in tasks" v-if="task.completed" v-text="task.description"></li> -->
+                <li v-for="bucketTodo in bucketsTodo" v-text="bucketTodo.idea"></li>
+            </ul>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

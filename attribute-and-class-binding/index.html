@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Attribute and Class Binding</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+
+        <div id="root">
+            <!-- <button v-bind:title="title">Hover</button> -->
+            <!-- <button :title="title">Hover</button> -->
+
+            <button :class="{'is-loading': isLoading }" @click="toggleClass">Click</button>
+
+            <!-- <h1 :class="className">Text</h1> -->
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
