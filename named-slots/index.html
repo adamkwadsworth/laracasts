@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Named Slots</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+</head>
+
+<body>
+
+    <div id="root">
+
+        <modal>
+            <template slot="header">Title Here</template>
+
+            Sed bibendum ultrices purus sed bibendum. Nullam vitae lobortis lacus. Sed neque ipsum, feugiat sit amet dapibus at, pulvinar sit amet elit. Duis euismod turpis non justo scelerisque commodo. Fusce efficitur, metus a pretium tempus,
+            risus tortor molestie magna, quis tincidunt felis ligula vel turpis.
+
+            <!-- Remove to show default -->
+            <template slot="footer">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+            </template>
+
+        </modal>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
