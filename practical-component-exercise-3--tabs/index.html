@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practical Components Exercise #3: Tabs</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="root" class="container">
+
+        <tabs>
+            <tab name="Tab One" :selected="true">
+                <p>Content One</p>
+            </tab>
+            <tab name="Tab Two">
+                <p>Content Two</p>
+            </tab>
+            <tab name="Tab Three">
+                <p>Content Three</p>
+            </tab>
+        </tabs>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/main.js"></script>
+
+</html>
