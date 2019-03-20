@@ -6,14 +6,14 @@ Vue.component('modal', {
                 <div class="mb-4">
                     <slot></slot>
                 </div>
-                
+
                 <div class="flex justify-center">
                     <button class="flex-no-shrink text-white py-2 px-4 rounded bg-teal hover:bg-teal-dark" @click="$emit('close')">Close</button>
                 </div>
             </div>
         </div>
     </div>
-    4`
+    `
 })
 
 var app = new Vue({
