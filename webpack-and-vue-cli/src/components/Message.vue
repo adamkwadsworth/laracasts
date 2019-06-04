@@ -1,6 +1,8 @@
 <template>
     <div class="box">
-        <p><slot></slot></p>
+        <p>
+            <slot></slot>
+        </p>
     </div>
 </template>
 
@@ -11,9 +13,10 @@
 </script>
 
 <style lang="scss">
-.box {
-    background-color:gray;
-    padding:10px;
-    border:solid 1px black;
-}
+    .box {
+        background-color: red;
+        p {
+            color: white;
+        }
+    }
 </style>
